@@ -1,0 +1,8 @@
+<div [style.backgroundColor]="color">
+  CV TP 1
+</div>
+<app-fils colorPere={{color}} (colorChange)="showColor($event)"></app-fils>
+<input [(ngModel)]="color"
+type="text"
+>
+<button (click)="backToDefault()">Default Color</button>

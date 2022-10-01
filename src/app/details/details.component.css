@@ -1,0 +1,13 @@
+.containerDetails{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.cont1{
+    width: 50%;
+    align-items: center;
+}
+.cont2{
+    width: 50%;
+    align-items: center;
+}
