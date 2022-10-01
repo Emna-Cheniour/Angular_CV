@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CV } from '../cv-model';
 
 @Component({
   selector: 'app-carte',
@@ -8,13 +9,15 @@ import { Component, Input, OnInit } from '@angular/core';
   ]
 })
 export class CarteComponent implements OnInit {
-  @Input() nom='';
-  @Input() prenom='';
-  @Input() image:string|undefined;
-  @Input() citation:string|undefined;
-  @Input() description:string|undefined;
-  @Input() job:string|undefined;
-  @Input() motsCles:string|undefined;
+  @Input() cv:CV={
+  nom:'',
+  prenom:'',
+  image:"",
+  citation:"",
+  description:"",
+  job:"",
+  motsCles:"",
+}
 
   
   constructor() { }

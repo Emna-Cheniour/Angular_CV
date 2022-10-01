@@ -1,7 +1,5 @@
 <div class="list-group">
-    <button type="button" class="list-group-item list-group-item-action active" (click)="outputDetails('Emna','Cheniour','assets/images/emna.jpg','if you can you will','22','22','22')">
-      Emna Cheniour
-    </button>
-    <button type="button" class="list-group-item list-group-item-action" (click)="outputDetails('Haythem','Kaouech','assets/images/emna.jpg','if you can you will','22','22','22')">Haythem Kaouech</button>
-    <button type="button" class="list-group-item list-group-item-action" (click)="outputDetails('Moetaz','Hellal','assets/images/emna.jpg','if you can you will','22','22','22')">Moetaz Hellal</button>
-  </div>
+<app-item class="list-group-item" [inputcv]="cv1" (click)="this.export(cv1)"></app-item>
+<app-item class="list-group-item" [inputcv]="cv2"(click)="this.export(cv2)"></app-item>
+<app-item class="list-group-item" [inputcv]="cv3"(click)="this.export(cv3)"></app-item>
+</div>

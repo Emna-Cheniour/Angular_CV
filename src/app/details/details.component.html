@@ -1,36 +1,36 @@
 <div class='containerDetails'>
     <div class="cont1">
-        <app-carte nom={{newnom}} prenom={{newprenom}} job={{newjob}} image={{newimage}} citation={{newcitation}} description={{newdescription}} motsCles={{newmotsCles}} ></app-carte>
+        <app-carte [cv]=this.newcv></app-carte>
     </div>
     <div class="cont2">
 <form>
     <div class="form-group">
       <label for="exampleInputName">Nom</label>
-      <input type="text" class="form-control" name="nom" id="exampleInputName" placeholder="Nom" [(ngModel)]="newnom">
+      <input type="text" class="form-control" name="nom" id="exampleInputName" placeholder="Nom" [(ngModel)]="this.newcv.nom">
     </div>
     <div class="form-group">
       <label for="prenom">Prénom</label>
-      <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prenom" [(ngModel)]="newprenom">
+      <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prenom" [(ngModel)]="this.newcv.prenom">
     </div>
     <div class="form-group">
         <label for="exampleInputJob">Job</label>
-        <input type="text" class="form-control" id="exampleInputJob" name="job" placeholder="Job" [(ngModel)]="newjob">
+        <input type="text" class="form-control" id="exampleInputJob" name="job" placeholder="Job" [(ngModel)]="this.newcv.job">
       </div>
       <div class="form-group">
         <label for="exampleInputPath">Image</label>
-        <input type="text" class="form-control" id="exampleInputPath" name="image" placeholder="Image" [(ngModel)]="newimage">
+        <input type="text" class="form-control" id="exampleInputPath" name="image" placeholder="Image" [(ngModel)]="this.newcv.image">
       </div>
       <div class="form-group">
           <label for="exampleInputCitation">Citation Favorite</label>
-          <input type="text" class="form-control" id="exampleInputCitation" name="citation" placeholder="Citation" [(ngModel)]="newcitation">
+          <input type="text" class="form-control" id="exampleInputCitation" name="citation" placeholder="Citation" [(ngModel)]="this.newcv.citation">
         </div>
         <div class="form-group">
           <label for="exampleInputDescription">Décrivez nous votre Travail</label>
-          <input type="text" class="form-control" id="exampleInputDescription" name="description" placeholder="Description" [(ngModel)]="newdescription">
+          <input type="text" class="form-control" id="exampleInputDescription" name="description" placeholder="Description" [(ngModel)]="this.newcv.description">
         </div>
         <div class="form-group">
             <label for="exampleInputTravail">Mots clé de votre travail</label>
-            <input type="text" class="form-control" id="exampleInputTravail" name="motsCles" placeholder="Mots Clés" [(ngModel)]="newmotsCles">
+            <input type="text" class="form-control" id="exampleInputTravail" name="motsCles" placeholder="Mots Clés" [(ngModel)]="this.newcv.motsCles">
           </div>
   </form>
 </div>

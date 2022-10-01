@@ -8,6 +8,9 @@ import { DetailsComponent } from './details/details.component';
 import { FilsComponent } from './fils/fils.component';
 import { ListeComponent } from './liste/liste.component';
 import { FinalCvComponent } from './final-cv/final-cv.component';
+import { ItemComponent } from './item/item.component';
+import { RouterModule } from '@angular/router';
+import { CvthequeComponent } from './cvtheque/cvtheque.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { FinalCvComponent } from './final-cv/final-cv.component';
     DetailsComponent,
     FilsComponent,
     ListeComponent,
-    FinalCvComponent  ],
+    FinalCvComponent,
+    ItemComponent,
+    CvthequeComponent  ],
   imports: [
     BrowserModule,
     FormsModule
